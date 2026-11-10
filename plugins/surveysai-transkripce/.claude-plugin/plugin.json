@@ -1,0 +1,11 @@
+{
+  "name": "surveysai-transkripce",
+  "version": "1.0.0",
+  "description": "Transcribe Czech audio and video with Transkripce (MCP server; needs a TRANSKRIPCE_API_KEY).",
+  "author": {
+    "name": "SurveysAI (i-dotazník s.r.o.)",
+    "url": "https://www.surveysai.com/"
+  },
+  "homepage": "https://www.surveysai.com/for-ai-agents/",
+  "privacyPolicyUrl": "https://transkripce.i-dotaznik.cz/napoveda/privacy/"
+}

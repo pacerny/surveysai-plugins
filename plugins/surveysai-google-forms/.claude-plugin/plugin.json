@@ -1,0 +1,11 @@
+{
+  "name": "surveysai-google-forms",
+  "version": "1.0.0",
+  "description": "Create Google Forms in your own Google account from a plain-text survey draft (SurveysAI for Google Forms MCP server, OAuth sign-in).",
+  "author": {
+    "name": "SurveysAI (i-dotazník s.r.o.)",
+    "url": "https://www.surveysai.com/"
+  },
+  "homepage": "https://www.surveysai.com/for-ai-agents/",
+  "privacyPolicyUrl": "https://www.surveysai.com/legal/privacy/"
+}

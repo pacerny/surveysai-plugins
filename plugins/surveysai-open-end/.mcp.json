@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "surveysai-open-end": {
+      "type": "http",
+      "url": "https://mcp.open-end.surveysai.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${OPEN_END_API_KEY}"
+      }
+    }
+  }
+}

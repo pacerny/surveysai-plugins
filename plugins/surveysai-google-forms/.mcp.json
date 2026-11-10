@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "surveysai-google-forms": {
+      "type": "http",
+      "url": "https://mcp.for-google-forms.surveysai.com/mcp"
+    }
+  }
+}

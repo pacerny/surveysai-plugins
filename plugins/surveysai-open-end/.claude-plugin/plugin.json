@@ -1,0 +1,11 @@
+{
+  "name": "surveysai-open-end",
+  "version": "1.0.0",
+  "description": "Code open-ended survey responses into a category hierarchy with Open-End Response Analyser (MCP server; needs an OPEN_END_API_KEY).",
+  "author": {
+    "name": "SurveysAI (i-dotazník s.r.o.)",
+    "url": "https://www.surveysai.com/"
+  },
+  "homepage": "https://www.surveysai.com/for-ai-agents/",
+  "privacyPolicyUrl": "https://www.surveysai.com/legal/privacy/"
+}

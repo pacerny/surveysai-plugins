@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "surveysai-transkripce": {
+      "type": "http",
+      "url": "https://transkripce.i-dotaznik.cz/api/v1/transcription/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${TRANSKRIPCE_API_KEY}"
+      }
+    }
+  }
+}

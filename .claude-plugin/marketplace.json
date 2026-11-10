@@ -1,0 +1,27 @@
+{
+  "name": "surveysai",
+  "owner": {
+    "name": "SurveysAI (i-dotazník s.r.o.)",
+    "url": "https://www.surveysai.com/"
+  },
+  "metadata": {
+    "description": "SurveysAI tools for AI agents: Google Forms, Czech transcription and open-ended response analysis."
+  },
+  "plugins": [
+    {
+      "name": "surveysai-google-forms",
+      "source": "./plugins/surveysai-google-forms",
+      "description": "Create Google Forms in your own Google account from a plain-text survey draft (SurveysAI for Google Forms MCP server, OAuth sign-in)."
+    },
+    {
+      "name": "surveysai-transkripce",
+      "source": "./plugins/surveysai-transkripce",
+      "description": "Transcribe Czech audio and video with Transkripce (MCP server; needs a TRANSKRIPCE_API_KEY)."
+    },
+    {
+      "name": "surveysai-open-end",
+      "source": "./plugins/surveysai-open-end",
+      "description": "Code open-ended survey responses into a category hierarchy with Open-End Response Analyser (MCP server; needs an OPEN_END_API_KEY)."
+    }
+  ]
+}
