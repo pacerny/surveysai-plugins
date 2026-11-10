@@ -53,7 +53,7 @@ The skills in `plugins/*/skills/` can be copied to `~/.agents/skills/`.
 
 ## Other clients
 
-All servers are listed in the official MCP Registry:
+The Google Forms, Transkripce and Open-End servers are listed in the official MCP Registry:
 - https://registry.modelcontextprotocol.io/v0/servers?search=com.surveysai/for-google-forms
 - https://registry.modelcontextprotocol.io/v0/servers?search=com.surveysai/transkripce
 - https://registry.modelcontextprotocol.io/v0/servers?search=com.surveysai/open-end

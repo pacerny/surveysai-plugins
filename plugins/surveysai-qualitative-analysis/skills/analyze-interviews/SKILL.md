@@ -15,8 +15,12 @@ Privacy policy: https://www.surveysai.com/legal/privacy/
 1. `qualitative_list_presets` and `qualitative_get_capabilities` (no account
    needed) - pick the method with the user and agree the analysis brief
    (research question, context, report language).
-2. `qualitative_quote_analysis` with word counts only (never transcript
-   text). Show the user the price in credits, the model and the effort.
+2. **Before quoting, ask the user to confirm** that the analysis brief and
+   the chosen settings (preset, languages, reports) and the word counts are
+   sent to SurveysAI - never transcript text at this step. Offer to keep the
+   brief free of names and confidential details. Then call
+   `qualitative_quote_analysis` and show the user the price in credits, the
+   model and the effort.
 3. **Before sending any transcript, ask the user to confirm** what goes to
    the service: which transcripts (names, number, size) and the brief.
    Transcripts usually contain personal data: by default offer to replace
