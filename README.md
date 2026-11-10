@@ -7,6 +7,7 @@ Remote MCP servers and skills for SurveysAI products:
 | `surveysai-google-forms` | Creates Google Forms in your own Google account from a plain-text survey | OAuth (browser sign-in on first use) |
 | `surveysai-transkripce` | Transcribes Czech audio and video | API key from your Transkripce profile → `TRANSKRIPCE_API_KEY` |
 | `surveysai-open-end` | Codes open-ended survey responses into a category hierarchy | API key from your Open-End profile → `OPEN_END_API_KEY` |
+| `surveysai-qualitative-analysis` | Analyses interview and focus group transcripts | API key from your Account page → `QUALITATIVE_ANALYSIS_API_KEY` |
 
 The skills ask before sending survey drafts or responses to a service, leave
 uploading recordings to you, and show the price before any paid action
@@ -22,8 +23,9 @@ not affiliated with Google, OpenAI or Anthropic.
 
 Set the API key environment variables before starting `claude` for the
 plugins that need them. Skills are available as `/surveysai-google-forms:create-google-form`,
-`/surveysai-transkripce:transcribe-audio` and
-`/surveysai-open-end:analyze-open-ended-responses`.
+`/surveysai-transkripce:transcribe-audio`,
+`/surveysai-open-end:analyze-open-ended-responses` and
+`/surveysai-qualitative-analysis:analyze-interviews`.
 
 ## Codex CLI
 
@@ -41,6 +43,10 @@ bearer_token_env_var = "TRANSKRIPCE_API_KEY"
 [mcp_servers.surveysai-open-end]
 url = "https://mcp.open-end.surveysai.com/mcp"
 bearer_token_env_var = "OPEN_END_API_KEY"
+
+[mcp_servers.surveysai-qualitative-analysis]
+url = "https://qualitative-analysis.surveysai.com/mcp"
+bearer_token_env_var = "QUALITATIVE_ANALYSIS_API_KEY"
 ```
 
 The skills in `plugins/*/skills/` can be copied to `~/.agents/skills/`.
@@ -55,7 +61,8 @@ More: https://www.surveysai.com/for-ai-agents/
 
 ## Privacy and security
 
-- Privacy: https://www.surveysai.com/legal/privacy/ (Google Forms, Open-End),
+- Privacy: https://www.surveysai.com/legal/privacy/ (Google Forms, Open-End,
+  Qualitative Analysis),
   https://transkripce.i-dotaznik.cz/napoveda/privacy/ (Transkripce).
 - API keys belong in environment variables, never in files of this repository.
 - Security issues: see [SECURITY.md](SECURITY.md).

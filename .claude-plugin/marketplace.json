@@ -5,7 +5,7 @@
     "url": "https://www.surveysai.com/"
   },
   "metadata": {
-    "description": "SurveysAI tools for AI agents: Google Forms, Czech transcription and open-ended response analysis."
+    "description": "SurveysAI tools for AI agents: Google Forms, Czech transcription, open-ended response analysis and qualitative interview analysis."
   },
   "plugins": [
     {
@@ -22,6 +22,11 @@
       "name": "surveysai-open-end",
       "source": "./plugins/surveysai-open-end",
       "description": "Code open-ended survey responses into a category hierarchy with Open-End Response Analyser (MCP server; needs an OPEN_END_API_KEY)."
+    },
+    {
+      "name": "surveysai-qualitative-analysis",
+      "source": "./plugins/surveysai-qualitative-analysis",
+      "description": "Analyse interview and focus group transcripts with SurveysAI Qualitative Analysis (MCP server; needs a QUALITATIVE_ANALYSIS_API_KEY)."
     }
   ]
 }

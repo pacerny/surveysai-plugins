@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "surveysai-qualitative-analysis": {
+      "type": "http",
+      "url": "https://qualitative-analysis.surveysai.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${QUALITATIVE_ANALYSIS_API_KEY}"
+      }
+    }
+  }
+}
