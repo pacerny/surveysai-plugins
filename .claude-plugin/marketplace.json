@@ -21,12 +21,12 @@
     {
       "name": "surveysai-open-end",
       "source": "./plugins/surveysai-open-end",
-      "description": "Code open-ended survey responses into a category hierarchy with Open-End Response Analyser (MCP server; needs an OPEN_END_API_KEY)."
+      "description": "Code open-ended survey responses into a category hierarchy with Open-End Response Analyser (MCP server, OAuth sign-in)."
     },
     {
       "name": "surveysai-qualitative-analysis",
       "source": "./plugins/surveysai-qualitative-analysis",
-      "description": "Analyse interview and focus group transcripts with SurveysAI Qualitative Analysis (MCP server; needs a QUALITATIVE_ANALYSIS_API_KEY)."
+      "description": "Analyse interview and focus group transcripts with SurveysAI Qualitative Analysis (MCP server, OAuth sign-in)."
     }
   ]
 }

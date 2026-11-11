@@ -1,15 +1,18 @@
 ---
 name: analyze-interviews
-description: Analyse interview or focus group transcripts (thematic analysis, rapid analysis, deductive coding with a codebook) with SurveysAI Qualitative Analysis and read the reports. Use when the user has qualitative transcripts to analyse. Requires the QUALITATIVE_ANALYSIS_API_KEY environment variable.
+description: Analyse interview or focus group transcripts (thematic analysis, rapid analysis, deductive coding with a codebook) with SurveysAI Qualitative Analysis and read the reports. Use when the user has qualitative transcripts to analyse. Signs in with OAuth.
 ---
 
 # Analyse interviews with SurveysAI Qualitative Analysis
 
 Uses the `surveysai-qualitative-analysis` MCP server
 (https://qualitative-analysis.surveysai.com, operated by i-dotazník s.r.o.).
-Authentication: an API key created by the user on the Account page
-(https://qualitative-analysis.surveysai.com/account), exported as
-`QUALITATIVE_ANALYSIS_API_KEY` before starting the agent.
+Authentication: OAuth - when the user authenticates the server (in Claude Code:
+`/mcp`), the browser opens to sign
+in and approve access (the connection cannot delete analyses or buy credits).
+An API key from the Account page
+(https://qualitative-analysis.surveysai.com/account) also works in clients
+that send an `Authorization: Bearer` header.
 Privacy policy: https://www.surveysai.com/legal/privacy/
 
 1. `qualitative_list_presets` and `qualitative_get_capabilities` (no account

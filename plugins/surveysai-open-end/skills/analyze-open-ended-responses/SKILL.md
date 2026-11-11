@@ -1,16 +1,21 @@
 ---
 name: analyze-open-ended-responses
-description: Analyse open-ended survey answers or comments with Open-End Response Analyser - build a three-level category hierarchy (code frame) and code the responses. Use when the user has free-text survey responses to categorise or summarise into themes. Requires the OPEN_END_API_KEY environment variable.
+description: Analyse open-ended survey answers or comments with Open-End Response Analyser - build a three-level category hierarchy (code frame) and code the responses. Use when the user has free-text survey responses to categorise or summarise into themes. Signs in with OAuth.
 ---
 
 # Analyse open-ended responses with Open-End
 
 Uses the `surveysai-open-end` MCP server (https://open-end.surveysai.com,
-operated by i-dotazník s.r.o.). Authentication: an API key created by the
-user on their Open-End profile page
-(https://open-end.surveysai.com/auth/profile, section "API keys"), exported as
-`OPEN_END_API_KEY` before starting the agent.
+operated by i-dotazník s.r.o.). Authentication: OAuth - when the user authenticates the server (in Claude Code:
+`/mcp`), the browser opens to sign
+in to Open-End and approve access (the connection cannot delete projects or
+buy credits). An API key from the profile page
+(https://open-end.surveysai.com/auth/profile) also works in clients that send
+an `Authorization: Bearer` header.
 Privacy policy: https://www.surveysai.com/legal/privacy/
+
+`open_end_get_account` shows the signed-in account and its credit balance
+(charges nothing); use it when the user asks about credits.
 
 1. `open_end_get_capabilities` once; `open_end_get_pricing` for the price
    list (credits per valid response). These calls send no project metadata or
