@@ -66,3 +66,9 @@ More: https://www.surveysai.com/for-ai-agents/
   https://transkripce.i-dotaznik.cz/napoveda/privacy/ (Transkripce).
 - API keys belong in environment variables, never in files of this repository.
 - Security issues: see [SECURITY.md](SECURITY.md).
+
+## License
+
+MIT, see [LICENSE](LICENSE). It covers all content of this repository
+(manifests, skill instructions, documentation and icons), not the services
+the plugins connect to.

@@ -7,5 +7,8 @@
     "url": "https://www.surveysai.com/"
   },
   "homepage": "https://www.surveysai.com/for-ai-agents/",
-  "privacyPolicyUrl": "https://transkripce.i-dotaznik.cz/napoveda/privacy/"
+  "privacyPolicyUrl": "https://transkripce.i-dotaznik.cz/napoveda/privacy/",
+  "license": "MIT",
+  "icon": "./icon.png",
+  "repository": "https://github.com/pacerny/surveysai-plugins"
 }
